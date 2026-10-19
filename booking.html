@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="en"><head><title>Book a table | Tolpar Tea House</title><meta name="description" content="Reserve a table at Tolpar Tea House in Dhanmondi, Dhaka.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,550;12..96,650;12..96,800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+<a class="brand" href="index.html"><img src="assets/favicon.svg" alt="" width="34" height="34">Tolpar Tea House</a>
+<nav class="nav" id="nav" aria-label="Main"><ul>
+<li><a href="index.html#home" >Home</a></li>
+<li><a href="index.html#menu">Menu</a></li>
+<li><a href="index.html#visit">Visit</a></li>
+<li><a href="index.html#faq">FAQ</a></li>
+<li><a href="booking.html" aria-current="page">Book a table</a></li>
+</ul></nav>
+<div class="tools">
+<button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">☾</button>
+<button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">☰</button>
+</div></div></header>
+<main id="main"><section><div class="wrap">
+<h1 style="font-size:clamp(2rem,5vw,3.2rem)">Book a table</h1>
+<p class="muted">Tell us when you are coming. A small fee per guest holds your table and is taken off your bill.</p>
+<div class="book-grid">
+<div>
+<form id="booking-form" class="card" novalidate>
+<div class="alert" id="form-alert" role="alert" hidden></div>
+<div class="two">
+<div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" aria-describedby="name-err" required><p class="err" id="name-err"></p></div>
+<div class="field"><label for="phone">Mobile number</label><input id="phone" name="phone" type="tel" inputmode="numeric" placeholder="01XXXXXXXXX" autocomplete="tel" aria-describedby="phone-err" required><p class="err" id="phone-err"></p></div>
+</div>
+<div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-err" required><p class="err" id="email-err"></p></div>
+<div class="two">
+<div class="field"><label for="date">Date</label><input id="date" name="date" type="date" aria-describedby="date-err" required><p class="err" id="date-err"></p></div>
+<div class="field"><label for="time">Time</label><select id="time" name="time" aria-describedby="time-err" required></select><p class="err" id="time-err"></p></div>
+</div>
+<div class="field"><label for="guests">Guests</label>
+<div class="stepper"><button class="icon-btn" type="button" id="g-minus" aria-label="Fewer guests">−</button><input id="guests" name="guests" type="number" min="1" max="12" value="2" inputmode="numeric" aria-describedby="guests-err"><button class="icon-btn" type="button" id="g-plus" aria-label="More guests">+</button></div>
+<p class="err" id="guests-err"></p></div>
+<fieldset class="field"><legend>Seating</legend>
+<div class="radios">
+<label><input type="radio" name="seat" value="Window" checked>Window</label>
+<label><input type="radio" name="seat" value="Quiet corner">Quiet corner</label>
+<label><input type="radio" name="seat" value="Balcony">Balcony</label>
+</div></fieldset>
+<div class="field"><label for="note">Anything we should know? (optional)</label><textarea id="note" name="note" rows="3" maxlength="200"></textarea><p class="counter" id="note-count" aria-live="polite">0 / 200</p></div>
+<button class="btn primary" type="submit">Confirm booking</button>
+</form>
+<div class="card success" id="success" tabindex="-1" hidden>
+<h2>Table booked</h2>
+<p id="success-text"></p>
+<button class="btn" id="book-again" type="button">Make another booking</button>
+</div>
+</div>
+<aside class="card summary" aria-labelledby="sum-title">
+<h2 id="sum-title" style="font-size:1.3rem">Your booking</h2>
+<dl aria-live="polite"><dt>Date</dt><dd id="s-date">Not chosen</dd><dt>Time</dt><dd id="s-time">Not chosen</dd><dt>Guests</dt><dd id="s-guests">2</dd><dt>Seating</dt><dd id="s-seat">Window</dd><dt>Holding fee (৳100 per guest)</dt><dd class="total" id="s-total">৳200</dd></dl>
+</aside>
+</div></div></section></main>
+<footer class="site-footer"><div class="wrap"><p>© 2026 Tolpar Tea House, Dhanmondi, Dhaka. Made as an Inovegen front-end project.</p></div></footer>
+<button class="btn primary small to-top" id="to-top" type="button" aria-label="Back to top">↑ Top</button>
+<script src="js/main.js" defer></script></body></html>

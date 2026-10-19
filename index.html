@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="en"><head><title>Tolpar Tea House | Tea, snacks and quiet tables in Dhanmondi</title><meta name="description" content="Single-estate teas, fresh snacks and bookable tables at Tolpar Tea House in Dhanmondi, Dhaka.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,550;12..96,650;12..96,800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+<a class="brand" href="index.html"><img src="assets/favicon.svg" alt="" width="34" height="34">Tolpar Tea House</a>
+<nav class="nav" id="nav" aria-label="Main"><ul>
+<li><a href="index.html#home" aria-current="page">Home</a></li>
+<li><a href="index.html#menu">Menu</a></li>
+<li><a href="index.html#visit">Visit</a></li>
+<li><a href="index.html#faq">FAQ</a></li>
+<li><a href="booking.html" >Book a table</a></li>
+</ul></nav>
+<div class="tools">
+<button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">☾</button>
+<button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">☰</button>
+</div></div></header>
+<main id="main">
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div>
+<h1>Steep it right. Sit down slowly.</h1>
+<p class="lead">Tolpar is a tea house in Dhanmondi serving Sylhet estate leaf, masala chai and fresh snacks. Pick a tea on the right and we will time the steep for you.</p>
+<div class="cta-row"><a class="btn primary" href="booking.html">Book a table</a><a class="btn" href="#menu">See the menu</a></div>
+</div>
+<aside class="brew" aria-labelledby="brew-title">
+<h2 id="brew-title">Brew timer</h2>
+<label for="tea-select">Choose your tea</label>
+<select id="tea-select"></select>
+<div class="ring"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="track" cx="60" cy="60" r="52"/><circle class="bar-fill" id="ring" cx="60" cy="60" r="52"/></svg><div class="time" id="time" role="timer" aria-label="Time remaining">3:00</div></div>
+<div class="cta-row" style="justify-content:center;margin-top:0"><button class="btn primary" id="brew-start" type="button">Start</button><button class="btn" id="brew-reset" type="button">Reset</button></div>
+<p class="brew-note" id="brew-note" aria-live="polite"></p>
+</aside></div></section>
+
+<section id="menu"><div class="wrap">
+<h2>What we are pouring today</h2>
+<p class="muted">Filter by type or search by name. Prices are in taka.</p>
+<div class="filters" role="group" aria-label="Filter menu">
+<button class="chip" type="button" data-cat="all" aria-pressed="true">All</button>
+<button class="chip" type="button" data-cat="Hot tea" aria-pressed="false">Hot tea</button>
+<button class="chip" type="button" data-cat="Cold" aria-pressed="false">Cold</button>
+<button class="chip" type="button" data-cat="Snacks" aria-pressed="false">Snacks</button>
+<div class="search"><label class="tag" for="menu-search" style="display:none">Search the menu</label><input id="menu-search" type="search" placeholder="Search the menu" aria-label="Search the menu"></div>
+</div>
+<p class="tag" id="menu-count" aria-live="polite"></p>
+<div class="grid" id="menu-grid"></div>
+</div></section>
+
+<section class="visit" id="visit"><div class="wrap cols">
+<div><h2>Find us</h2><p>Road 7A, Dhanmondi, Dhaka 1209. Two minutes from Dhanmondi Lake, up the stairs above the bookshop.</p><a class="btn primary" href="booking.html">Reserve your seat</a></div>
+<dl><dt>Sunday to Thursday</dt><dd>8:00 am to 10:00 pm</dd><dt>Friday and Saturday</dt><dd>9:00 am to 11:00 pm</dd><dt>Call us</dt><dd><a href="tel:+8801700000000">01700-000000</a></dd></dl>
+</div></section>
+
+<section id="faq"><div class="wrap">
+<h2>Before you come</h2>
+<div class="faq" id="faq-list"></div>
+</div></section>
+</main>
+<footer class="site-footer"><div class="wrap"><p>© 2026 Tolpar Tea House, Dhanmondi, Dhaka. Made as an Inovegen front-end project.</p></div></footer>
+<button class="btn primary small to-top" id="to-top" type="button" aria-label="Back to top">↑ Top</button>
+<script src="js/main.js" defer></script></body></html>
